@@ -4,12 +4,12 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PacienteController;
 use App\Http\Controllers\AuthController;
 
-// ── Autenticación ──────────────────────────────────────────
+// ── Autenticación 
 Route::get('/',           [AuthController::class, 'showLogin'])->name('login');
 Route::post('/login',     [AuthController::class, 'login'])->name('login.post');
 Route::post('/logout',    [AuthController::class, 'logout'])->name('logout');
 
-// ── Rutas protegidas ────────────────────────────────────────
+// ── Rutas protegidas 
 Route::middleware('auth')->group(function () {
 
     Route::get('/dashboard', function () {
@@ -19,7 +19,7 @@ Route::middleware('auth')->group(function () {
     // CRUD Pacientes
     Route::resource('pacientes', PacienteController::class);
 
-    // Búsqueda AJAX (JavaScript/AJAX explícito para cubrir criterio de rúbrica)
+    // Búsqueda AJAX 
     Route::get('/pacientes-buscar', [PacienteController::class, 'buscar'])
          ->name('pacientes.buscar');
 

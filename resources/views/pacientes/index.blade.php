@@ -160,10 +160,6 @@
 
 @push('scripts')
 <script>
-/**
- * AJAX – Búsqueda en tiempo real
- * Criterio rúbrica: "Validaciones eficientes con JavaScript y AJAX"
- */
 (function () {
     const input    = document.getElementById('ajax-search');
     const dropdown = document.getElementById('search-dropdown');

@@ -167,9 +167,7 @@
                 </div>
             </div>
 
-            <!-- ══════════════════════════════════════════
-                 SECCIÓN 2: CONTACTO ADICIONAL
-            ══════════════════════════════════════════ -->
+            <!-- SECCIÓN 2: CONTACTO ADICIONAL -->
             <div class="form-section-title mt-4"><i class="bi bi-telephone me-2"></i>Contacto Adicional</div>
 
             <div class="row g-3 mb-3">
@@ -219,9 +217,7 @@
                 </div>
             </div>
 
-            <!-- ══════════════════════════════════════════
-                 SECCIÓN 3: EXAMEN LABORAL
-            ══════════════════════════════════════════ -->
+            <!-- SECCIÓN 3: EXAMEN LABORAL -->
             <div class="form-section-title mt-4"><i class="bi bi-clipboard2-pulse me-2"></i>Examen Laboral</div>
 
             <div class="row g-3">
@@ -365,7 +361,6 @@
         }, 500);
     });
 
-    // ── 3. Validación completa al enviar ──────────────────
     document.getElementById('formPaciente').addEventListener('submit', function (e) {
         let hasError = false;
 
