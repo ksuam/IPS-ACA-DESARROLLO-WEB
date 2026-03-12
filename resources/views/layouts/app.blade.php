@@ -256,6 +256,20 @@
            class="sidebar-link {{ request()->routeIs('pacientes.create') ? 'active' : '' }}">
             <i class="bi bi-person-plus-fill"></i> Registrar Paciente
         </a>
+
+        <div class="nav-section-label">Citas</div>
+        <a href="{{ route('citas.index') }}"
+           class="sidebar-link {{ request()->routeIs('citas.index') ? 'active' : '' }}">
+            <i class="bi bi-calendar-check-fill"></i> Gestión de Citas
+        </a>
+        <a href="{{ route('citas.calendario') }}"
+           class="sidebar-link {{ request()->routeIs('citas.calendario') ? 'active' : '' }}">
+            <i class="bi bi-calendar3"></i> Calendario
+        </a>
+        <a href="{{ route('citas.create') }}"
+           class="sidebar-link {{ request()->routeIs('citas.create') ? 'active' : '' }}">
+            <i class="bi bi-plus-circle-fill"></i> Nueva Cita
+        </a>
     </nav>
 
     <div class="sidebar-footer">

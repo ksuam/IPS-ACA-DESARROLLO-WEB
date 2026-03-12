@@ -99,7 +99,7 @@ class PacienteController extends Controller
         Paciente::create($validated);
 
         return redirect()->route('pacientes.index')
-                         ->with('success', '✅ Paciente registrado exitosamente.');
+                         ->with('success', 'Paciente registrado exitosamente.');
     }
 
     // ── SHOW ─────────────────────────────────────────────────
@@ -126,7 +126,7 @@ class PacienteController extends Controller
         $paciente->update($validated);
 
         return redirect()->route('pacientes.index')
-                         ->with('success', '✅ Paciente actualizado exitosamente.');
+                         ->with('success', 'Paciente actualizado exitosamente.');
     }
 
     // ── DESTROY ──────────────────────────────────────────────
